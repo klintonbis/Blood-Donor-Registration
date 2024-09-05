@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="image-container">
+    
+</div>
+<div class="container">
+<h1 style="margin-bottom: 50px;">Registration Form of a Donor</h1>
+
+    <!-- Start of Form -->
+    <form action="register.php" method="POST">
+        <div class="form-container">
+            <!-- Left Section -->
+            <div class="left-section">
+                <div class="form-group label-right"">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="form-group label-right"">
+                    <label for="nid">NID:</label>
+                    <input type="text" name="nid" required>
+                </div>
+                <div class="form-group label-right"">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" name="dob" required>
+                </div>
+                <div class="form-group label-right"">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="form-group label-right"">
+                    <label for="contact">Contact Number:</label>
+                    <input type="tel" name="contact" required>
+                </div>
+                <div class="form-group  label-right"">
+                    <label for="address">Address:</label>
+                    <textarea name="address" rows="2" required></textarea>
+                </div>
+                <div class="form-group  label-right"">
+                    <label for="blood_type">Blood Type:</label>
+                    <select name="blood_type" required>
+                        <option value="">Choose a type</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+                </div>
+                <div class="form-group label-right">
+                    <label for="height">Height (cm):</label>    
+                    <input type="number" name="height">
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" name="weight">
+                </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="right-section">
+                <div class="form-group label-right">
+                    <label>Donated blood before?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="donated_before" value="Yes" required> Yes</label>
+                        <label><input type="radio" name="donated_before" value="No" required> No</label>
+                    </div>
+                </div>
+                <div class="form-group label-right">
+                    <label for="allergy">Allergy Details:</label>
+                    <input type="text" name="allergy">
+                </div>
+                <div class="form-group label-right">
+                    <label>Serious Disease History:</label>
+                    <textarea name="disease" rows="2"></textarea>
+                </div>
+                <div class="form-group label-right">
+                    <label>Has anemia?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="anemia" value="Yes" required> Yes</label>
+                        <label><input type="radio" name="anemia" value="No" required> No</label>
+                    </div>
+                </div>
+                <div class="form-group label-right">
+                    <label>Cardiac patient?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="cardiac" value="Yes" required> Yes</label>
+                        <label><input type="radio" name="cardiac" value="No" required> No</label>
+                    </div>
+                </div>
+                <div class="form-group label-right">
+                    <label>Under Medication?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="medication" value="Yes" required> Yes</label>
+                        <label><input type="radio" name="medication" value="No" required> No</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </div>
+    </form>
+    <!-- End of Form -->
+</div>
+</body>
+</html>

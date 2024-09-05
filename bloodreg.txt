@@ -1,0 +1,19 @@
+CREATE TABLE patient (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    nid VARCHAR(20) NOT NULL UNIQUE,
+    dob DATE NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    contact VARCHAR(20) NOT NULL,
+    address TEXT,
+    blood_type VARCHAR(10),
+    height DECIMAL(5,2),
+    weight DECIMAL(5,2),
+    donated_before ENUM('Yes', 'No') NOT NULL DEFAULT 'No',
+    allergy_details TEXT,
+    disease_history TEXT,
+    has_anemia ENUM('Yes', 'No') NOT NULL DEFAULT 'No',
+    cardiac_patient ENUM('Yes', 'No') NOT NULL DEFAULT 'No',
+    under_medication ENUM('Yes', 'No') NOT NULL DEFAULT 'No',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
